@@ -1,4 +1,4 @@
 string = "String"
 
-for i in string:
-    print(string[i + 1])
+for letter in string:
+    print(string[letter])
