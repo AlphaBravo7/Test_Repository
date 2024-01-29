@@ -1,4 +1,4 @@
 string = "String"
 
 for letter in string:
-    print(string[letter])
+    print(int(string[letter]))
