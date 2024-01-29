@@ -13,3 +13,7 @@ s.remove(2) and s.remove(5)
 
 # Printed set.
 print(s)
+
+
+# Shows the total elements within the "S" set.
+print(f"There is a total of {len(s)} elements within the set!")
