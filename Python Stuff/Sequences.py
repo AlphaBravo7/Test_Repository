@@ -1,4 +1,4 @@
 string = "String"
-Dictionary = dict[string[0], string[1], string[2], string[3], string[4], string[5], string[6]]
+Dictionary = [string[0], "\n", string[1], "\n", string[2], "\n", string[3], "\n", string[4], "\n", string[5], "\n"]
 
 print(Dictionary)
