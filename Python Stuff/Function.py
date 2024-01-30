@@ -1,4 +1,4 @@
-number = int(input("Pleace input a number: "))
+number = int(input("Please input a number: "))
 sqr_cube = input("Should the number be squared or cubed? ").lower()
 
 if sqr_cube == "squared":
