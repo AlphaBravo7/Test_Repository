@@ -1,4 +1,4 @@
-L = ["0", "1", "2"]
+N = "This is a sentence."
 
-for i in L:
-    print(i)
+for c in N:
+    print(c)
