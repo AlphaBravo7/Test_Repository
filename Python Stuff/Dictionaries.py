@@ -3,4 +3,4 @@ key_value = {"Docter":  "Definition: A medical professional.",
 
 key_value["Farmer"] = "Definition: A person who cultivates fruits, vegetables and possibly animals to be consumed."
 
-print(key_value["Docter"])
+print(key_value["Farmer"])
