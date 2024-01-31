@@ -5,6 +5,7 @@ try:
     y = int(input("Y: "))
 except ValueError:
     print("ERROR: Invalid input.")
+    sys.exit(1)
 
 try:
     result = x / y
