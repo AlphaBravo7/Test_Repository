@@ -6,8 +6,8 @@
 
             document.addEventListener('DOMContentLoaded', function() {
 
-                document.querySelector('#name').onsubmit = function() {
-                  const name = document.querySelector('input').value;
+                document.querySelector('form').onsubmit = function() {
+                  const name = document.querySelector('#name').value;
                   alert(`Hello, ${name}!`);
                 };
 
