@@ -11,12 +11,14 @@
 
         <script type="text/babel">
             function App() {
-                return (
-                    <div>Hello!</div>  
-                );
-            }
+                const x = 1;
+                const y = 2;
+                    return (
+                        <div>{ x + y }</div>  
+                    );
+                }
 
-            ReactDOM.render(<App />, document.querySelector("#app"));
+                ReactDOM.render(<App />, document.querySelector("#app"));
         </script>
     </body>
 </html>
