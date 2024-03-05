@@ -4,6 +4,34 @@
         <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
         <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <style>
+            #app {
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            #problem {
+                font-size: 72px;
+            }
+
+            #input {
+                font-size: large;
+            }
+            
+            #score {
+                font-size: larger;
+            }
+
+            .incorrect {
+                color: rgb(202, 12, 12)
+            }
+
+            #winner {
+                font-size: 72px;
+                align-self: center;
+                color: green;
+            }
+        </style>
         <title>React</title>
     </head>
     <body>
@@ -20,11 +48,34 @@
                 const [state, setState] = React.useState({
                     num1: 1,
                     num2: 2,
-                    response: ""
+                    response: "",
+                    score: 0,
+                    incorrect: false
                 });
 
                 function inputKeyPress(event) {
-                    // put code here.
+                    if (event.key === "Enter") {
+                        const answer = parseInt(state.response);
+                        if (state.num1 + state.num2 === answer) {
+                            // User's input was correct.
+                            setState({
+                                ...state,
+                                num1: Math.ceil(Math.random() * 10),
+                                num2: Math.ceil(Math.random() * 10),
+                                score: state.score + 1,
+                                response: "",
+                                incorrect: false
+                            });
+                        } else {
+                            // User's input was wrong.
+                            setState({
+                                ...state,
+                                score: state.score + 0,
+                                response: "",
+                                incorrect: true
+                            });
+                        }
+                    }
                 }
 
                 function updateResponse(event) {
@@ -34,10 +85,19 @@
                     });
                 }
 
+                if (state.score === 10) {
+                    return (
+                        <div id="winner">
+                            YOU WIN!
+                        </div>
+                    );
+                }
+
                 return (
                     <div>
-                        <div>{state.num1} + {state.num2}</div>
-                        <input onKeyPress={inputKeyPress} onChange={updateResponse} value={state.response} />
+                        <div className={state.incorrect ? "incorrect" : ""} id="problem">{state.num1} + {state.num2}</div>
+                        <input id="input" autoFocus={true} onKeyPress={inputKeyPress} onChange={updateResponse} value={state.response} />
+                        <div id="score">Score: {state.score}</div>
                     </div>
                 );
             
