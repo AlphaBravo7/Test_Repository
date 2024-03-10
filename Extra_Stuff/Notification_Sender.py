@@ -9,7 +9,7 @@ user_input = input("Y/N? ")
 user_input = user_input.lower()
 
 if user_input == "y":
-    toast = Notification(app_id="Reminder!",
+    toast = Notification(app_id="Test Notification",
                     title="This is a test!",
                     msg="A notification used a test. ",
                     duration="short",
