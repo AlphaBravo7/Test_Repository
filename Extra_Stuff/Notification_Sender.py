@@ -3,7 +3,7 @@ import time
 from winotify import Notification, audio
 
 engine = pyttsx3.init()
-engine.say("Do you wish to send the test notification? Y/N")
+engine.say("Do you wish to send the test notification?")
 engine.runAndWait()
 user_input = input("Y/N? ")
 user_input = user_input.lower()
@@ -21,4 +21,5 @@ if user_input == "y":
     engine.runAndWait()
 
 elif user_input == "n":
+    print("\n The notifcation was not sent. \n")
     quit()
