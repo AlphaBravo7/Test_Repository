@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GMT and EST Timezones</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+  }
+  #clock {
+    font-size: 2em;
+    margin-top: 20%;
+  }
+</style>
+</head>
+<body>
+  <div id="clock">
+    <div>GMT Time: <span id="gmtTime"></span></div>
+    <div>EST Time: <span id="estTime"></span></div>
+  </div>
+
+  <script>
+    function updateClocks() {
+      const gmtOptions = { timeZone: 'GMT', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      const estOptions = { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      
+      const gmtTime = new Date().toLocaleTimeString('en-GB', gmtOptions);
+      const estTime = new Date().toLocaleTimeString('en-GB', estOptions);
+      
+      document.getElementById('gmtTime').textContent = gmtTime;
+      document.getElementById('estTime').textContent = estTime;
+    }
+    
+    setInterval(updateClocks, 1000);
+    updateClocks(); // initial call to display the time immediately
+  </script>
+</body>
+</html>
