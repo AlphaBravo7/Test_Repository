@@ -54,6 +54,7 @@ while True:
         print(f"You bought nothing, your current total is: £{current}.")
     elif input_field == "finish":
         print(f"Thank you for shopping with us! The final total adds up to: £{current}.")
+        quit(0)
     else:
         print(f"Invalid input. The total is at £{current}.")
-        break
+        quit(0)
