@@ -27,22 +27,22 @@ def refund():
    if refundPrompt == "apple" and appleBought == True:
        print(f"Refunded apple! The total is: {current - 1}.")
    elif refundPrompt == "apple" and appleBought != True:
-       print("We cannot refund this item since you haven't bought it.")
+       print("We cannot refund this item since you haven't bought it. \n")
 
    elif refundPrompt == "banana" and bananaBought == True:
        print(f"Refunded banana! The total is: {current - 1.15}.")
    elif refundPrompt == "banana" and bananaBought != True:
-       print("We cannot refund this item since you haven't bought it.")
+       print("We cannot refund this item since you haven't bought it.\n")
 
    elif refundPrompt == "orange" and orangeBought == True:
        print(f"Refunded orange! The total is: {current - 1.25}.")
    elif refundPrompt == "orange" and orangeBought != True:
-       print("We cannot refund this item since you haven't bought it.")
+       print("We cannot refund this item since you haven't bought it. \n")
     
    elif refundPrompt == "pear" and pearBought == True:
        print(f"Refunded pear! The total is: {current - 1.85}.")
    elif refundPrompt == "pear" and pearBought != True:
-       print("We cannot refund this item since you haven't bought it.")
+       print("We cannot refund this item since you haven't bought it. \n")
 
 
 def buy():
@@ -82,6 +82,6 @@ while True:
         if refundPrompt == "apple" or refundPrompt == "banana" or refundPrompt == "orange" or refundPrompt == "pear":
             refund()
         else:
-            print("No item to refund.")
+            print("No item to refund. \n")
     else:
         print(f"\n Invalid input. The total is at £{current}. \n")
