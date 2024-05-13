@@ -124,7 +124,7 @@ while True:
         print(f"\n Thank you for shopping with us! The final total adds up to: £{current}.\n")
         quit(0)
     elif input_field == "refund":
-        refundPrompt = input("\n Which item would you like to refund? ").lower()
+        refundPrompt = print("\n Function does not work as intended. ").lower()
         if refundPrompt == "apple" or refundPrompt == "banana" or refundPrompt == "orange" or refundPrompt == "pear":
             print("Function does not work as intended. \n")
             pass
