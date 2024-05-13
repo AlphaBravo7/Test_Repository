@@ -28,22 +28,22 @@ def buy():
         appleBought = True
         if appleBought == True:
             current = totalCost + 1
-            print(f"Bought an apple successfully! Your current total is at £{current}.")
+            print(f"Bought an apple successfully! Your current total is at £{current}.\n")
     elif input_field == "banana":
         bananaBought = True
         if bananaBought == True:
             current = totalCost + 1.15
-            print(f"Bought a banana successfully! Your current total is at £{current}.")
+            print(f"Bought a banana successfully! Your current total is at £{current}.\n")
     elif input_field == "orange":
         orangeBought = True
         if orangeBought == True:
             current = totalCost + 1.25
-            print(f"Bought an orange successfully! Your current total is at £{current}.")
+            print(f"Bought an orange successfully! Your current total is at £{current}.\n")
     elif input_field == "pear":
         pearBought = True
         if pearBought == True:
             current = totalCost + 1.85
-            print(f"Bought a pear successfully! Your current total is at £{current}.")
+            print(f"Bought a pear successfully! Your current total is at £{current}.\n")
 
 while True:
     print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
