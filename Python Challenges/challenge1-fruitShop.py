@@ -16,32 +16,34 @@ banana = 1.15
 orange = 1.25
 pear = 1.85
 
+global totalCost
 totalCost = 0
 
 
 def buy():
-    totalCost = 0
+    global current
+    current = totalCost
 
     if input_field == "apple":
         appleBought = True
         if appleBought == True:
-            totalCost = totalCost + 1
-            print(f"Bought an apple successfully! Your current total is at £{totalCost}.")
+            current = totalCost + 1
+            print(f"Bought an apple successfully! Your current total is at £{current}.")
     elif input_field == "banana":
         bananaBought = True
         if bananaBought == True:
-            totalCost = totalCost + 1.15
-            print(f"Bought a banana successfully! Your current total is at £{totalCost}.")
+            current = totalCost + 1.15
+            print(f"Bought a banana successfully! Your current total is at £{current}.")
     elif input_field == "orange":
         orangeBought = True
         if orangeBought == True:
-            totalCost = totalCost + 1.25
-            print(f"Bought an orange successfully! Your current total is at £{totalCost}.")
+            current = totalCost + 1.25
+            print(f"Bought an orange successfully! Your current total is at £{current}.")
     elif input_field == "pear":
         pearBought = True
         if pearBought == True:
-            totalCost = totalCost + 1.85
-            print(f"Bought a pear successfully! Your current total is at £{totalCost}.")
+            current = totalCost + 1.85
+            print(f"Bought a pear successfully! Your current total is at £{current}.")
 
 while True:
     print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
@@ -49,9 +51,9 @@ while True:
     if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
         buy() 
     elif input_field == "nothing" or input_field == "":
-        print(f"You bought nothing, your current total is: £{totalCost}.")
+        print(f"You bought nothing, your current total is: £{current}.")
     elif input_field == "finish":
-        print(f"Thank you for shopping with us! The final total adds up to: £{totalCost}.")
+        print(f"Thank you for shopping with us! The final total adds up to: £{current}.")
     else:
-        print(f"Invalid input. The total is at £{totalCost}.")
+        print(f"Invalid input. The total is at £{current}.")
         quit()
