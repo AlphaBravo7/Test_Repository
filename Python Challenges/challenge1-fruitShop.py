@@ -19,11 +19,11 @@ pear = 1.85
 global totalCost
 totalCost = 0
 
+global current
+current = totalCost
+
 
 def buy():
-    global current
-    current = totalCost
-
     if input_field == "apple":
         appleBought = True
         if appleBought == True:
