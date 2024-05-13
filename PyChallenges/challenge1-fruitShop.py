@@ -115,7 +115,7 @@ def buy():
 
 while True:
     print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
-    input_field = input("What'd you like to buy? ['FINISH' will end the session | 'REFUND' to get a refund.] ").lower()
+    input_field = input("What'd you like to buy? ['FINISH' - ends session | 'REFUND' - get a refund (DOESN'T WORK PROPERLY)] ").lower()
     if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
         buy() 
     elif input_field == "nothing" or input_field == "":
