@@ -6,9 +6,16 @@
   # Orange: £1.25
   # Pear: £1.85
 
+global appleBought
 appleBought = False
+
+global bananaBought
 bananaBought = False
+
+global orangeBought
 orangeBought = False
+
+global pearBought
 pearBought = False
 
 apple = 1
