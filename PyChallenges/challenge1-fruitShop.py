@@ -121,7 +121,8 @@ while True:
     elif input_field == "nothing" or input_field == "":
         print(f"You bought nothing, your current total is: £{current}. \n")
     elif input_field == "finish":
-        print(f"\n Thank you for shopping with us! The final total adds up to: £{current}.\n")
+        print(f"\n Thank you for shopping with us! The final total adds up to: £{current}.")
+        print("We hope to see you again soon! \n")
         quit(0)
     elif input_field == "refund":
         # refundPrompt = print("\n Function does not work as intended. ").lower()
