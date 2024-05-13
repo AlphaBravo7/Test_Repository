@@ -19,18 +19,6 @@ current = totalCost
 
 
 def refund():
-    global appleBought
-    appleBought = False
-
-    global bananaBought
-    bananaBought = False
-
-    global orangeBought
-    orangeBought = False
-
-    global pearBought
-    pearBought = False
-
     if refundPrompt == "apple" and appleBought == True:
         appleBought = True
         print(f"Refunded apple! The total is: {current - 1}.")
@@ -61,6 +49,18 @@ def refund():
 
 
 def buy():
+    global appleBought
+    appleBought = False
+
+    global bananaBought
+    bananaBought = False
+
+    global orangeBought
+    orangeBought = False
+
+    global pearBought
+    pearBought = False
+
     if input_field == "apple":
         appleBought = True
         if appleBought == True:
