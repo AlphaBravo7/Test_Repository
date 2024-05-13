@@ -20,6 +20,8 @@ totalCost = 0
 
 
 def buy():
+    totalCost = 0
+
     if input_field == "apple":
         appleBought = True
         if appleBought == True:
