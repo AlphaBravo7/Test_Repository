@@ -126,7 +126,8 @@ while True:
     elif input_field == "refund":
         refundPrompt = input("\n Which item would you like to refund? ").lower()
         if refundPrompt == "apple" or refundPrompt == "banana" or refundPrompt == "orange" or refundPrompt == "pear":
-            refund()
+            print("Function does not work as intended. \n")
+            pass
         else:
             print("No item to refund. \n")
     else:
