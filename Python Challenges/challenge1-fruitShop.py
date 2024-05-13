@@ -43,15 +43,15 @@ def buy():
             totalCost = totalCost + 1.85
             print(f"Bought a pear successfully! Your current total is at £{totalCost}.")
 
-
-print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
-input_field = input("What'd you like to buy? ['FINISH' will end the session.] ").lower()
-if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
-    buy() 
-elif input_field == "nothing" or input_field == "":
-    print(f"You bought nothing, your current total is: £{totalCost}.")
-elif input_field == "finish":
-    print(f"Thank you for shopping with us! The final total adds up to: £{totalCost}.")
-else:
-    print(f"Invalid input. The total is at £{totalCost}.")
-    quit()
+while True:
+    print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
+    input_field = input("What'd you like to buy? ['FINISH' will end the session.] ").lower()
+    if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
+        buy() 
+    elif input_field == "nothing" or input_field == "":
+        print(f"You bought nothing, your current total is: £{totalCost}.")
+    elif input_field == "finish":
+        print(f"Thank you for shopping with us! The final total adds up to: £{totalCost}.")
+    else:
+        print(f"Invalid input. The total is at £{totalCost}.")
+        quit()
