@@ -57,4 +57,4 @@ while True:
         print(f"Thank you for shopping with us! The final total adds up to: £{current}.")
     else:
         print(f"Invalid input. The total is at £{current}.")
-        quit()
+        break
