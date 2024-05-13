@@ -26,22 +26,22 @@ current = totalCost
 def refund():
    if refundPrompt == "apple" and appleBought == True:
        print(f"Refunded apple! The total is: {current - 1}.")
-   elif refundPrompt == "apple" and appleBought != True:
+   elif refundPrompt == "apple" and appleBought == False:
        print("We cannot refund this item since you haven't bought it. \n")
 
    elif refundPrompt == "banana" and bananaBought == True:
        print(f"Refunded banana! The total is: {current - 1.15}.")
-   elif refundPrompt == "banana" and bananaBought != True:
+   elif refundPrompt == "banana" and bananaBought == False:
        print("We cannot refund this item since you haven't bought it.\n")
 
    elif refundPrompt == "orange" and orangeBought == True:
        print(f"Refunded orange! The total is: {current - 1.25}.")
-   elif refundPrompt == "orange" and orangeBought != True:
+   elif refundPrompt == "orange" and orangeBought == False:
        print("We cannot refund this item since you haven't bought it. \n")
     
    elif refundPrompt == "pear" and pearBought == True:
        print(f"Refunded pear! The total is: {current - 1.85}.")
-   elif refundPrompt == "pear" and pearBought != True:
+   elif refundPrompt == "pear" and pearBought == False:
        print("We cannot refund this item since you haven't bought it. \n")
 
 
