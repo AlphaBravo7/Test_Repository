@@ -23,6 +23,28 @@ global current
 current = totalCost
 
 
+def refund():
+   if refundPrompt == "apple" and appleBought == True:
+       print(f"Refunded apple! The total is: {current - 1}.")
+   elif refundPrompt == "apple" and appleBought != True:
+       print("We cannot refund this item since you haven't bought it.")
+
+   elif refundPrompt == "banana" and bananaBought == True:
+       print(f"Refunded banana! The total is: {current - 1.15}.")
+   elif refundPrompt == "banana" and bananaBought != True:
+       print("We cannot refund this item since you haven't bought it.")
+
+   elif refundPrompt == "orange" and orangeBought == True:
+       print(f"Refunded orange! The total is: {current - 1.25}.")
+   elif refundPrompt == "orange" and orangeBought != True:
+       print("We cannot refund this item since you haven't bought it.")
+    
+   elif refundPrompt == "pear" and pearBought == True:
+       print(f"Refunded pear! The total is: {current - 1.85}.")
+   elif refundPrompt == "pear" and pearBought != True:
+       print("We cannot refund this item since you haven't bought it.")
+
+
 def buy():
     if input_field == "apple":
         appleBought = True
@@ -47,7 +69,7 @@ def buy():
 
 while True:
     print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
-    input_field = input("What'd you like to buy? ['FINISH' will end the session.] ").lower()
+    input_field = input("What'd you like to buy? ['FINISH' will end the session | 'REFUND' to get a refund.] ").lower()
     if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
         buy() 
     elif input_field == "nothing" or input_field == "":
@@ -55,5 +77,11 @@ while True:
     elif input_field == "finish":
         print(f"\n Thank you for shopping with us! The final total adds up to: £{current}.\n")
         quit(0)
+    elif input_field == "refund":
+        refundPrompt = input("\n Which item would you like to refund? \n").lower()
+        if refundPrompt == "apple" or refundPrompt == "banana" or refundPrompt == "orange" or refundPrompt == "pear":
+            refund()
+        else:
+            print("No item to refund.")
     else:
         print(f"\n Invalid input. The total is at £{current}. \n")
