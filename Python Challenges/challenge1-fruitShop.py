@@ -18,6 +18,7 @@ pear = 1.85
 
 global totalCost
 totalCost = 0
+totalCost = int(totalCost)
 
 
 def buy():
