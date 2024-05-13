@@ -6,18 +6,6 @@
   # Orange: £1.25
   # Pear: £1.85
 
-global appleBought
-appleBought = False
-
-global bananaBought
-bananaBought = False
-
-global orangeBought
-orangeBought = False
-
-global pearBought
-pearBought = False
-
 apple = 1
 banana = 1.15
 orange = 1.25
@@ -31,33 +19,45 @@ current = totalCost
 
 
 def refund():
-   if refundPrompt == "apple" and appleBought == True:
-       appleBought = True
-       print(f"Refunded apple! The total is: {current - 1}.")
-   elif refundPrompt == "apple" and appleBought == False:
-       appleBought = False
-       print("We cannot refund this item since you haven't bought it. \n")
+    global appleBought
+    appleBought = False
 
-   elif refundPrompt == "banana" and bananaBought == True:
-       bananaBought = True
-       print(f"Refunded banana! The total is: {current - 1.15}.")
-   elif refundPrompt == "banana" and bananaBought == False:
-       bananaBought = False
-       print("We cannot refund this item since you haven't bought it.\n")
+    global bananaBought
+    bananaBought = False
 
-   elif refundPrompt == "orange" and orangeBought == True:
-       orangeBought = True
-       print(f"Refunded orange! The total is: {current - 1.25}.")
-   elif refundPrompt == "orange" and orangeBought == False:
-       orangeBought = False
-       print("We cannot refund this item since you haven't bought it. \n")
-    
-   elif refundPrompt == "pear" and pearBought == True:
-       pearBought = True
-       print(f"Refunded pear! The total is: {current - 1.85}.")
-   elif refundPrompt == "pear" and pearBought == False:
-       pearBought = False
-       print("We cannot refund this item since you haven't bought it. \n")
+    global orangeBought
+    orangeBought = False
+
+    global pearBought
+    pearBought = False
+
+    if refundPrompt == "apple" and appleBought == True:
+        appleBought = True
+        print(f"Refunded apple! The total is: {current - 1}.")
+    elif refundPrompt == "apple" and appleBought == False:
+        appleBought = False
+        print("We cannot refund this item since you haven't bought it. \n")
+
+    elif refundPrompt == "banana" and bananaBought == True:
+        bananaBought = True
+        print(f"Refunded banana! The total is: {current - 1.15}.")
+    elif refundPrompt == "banana" and bananaBought == False:
+        bananaBought = False
+        print("We cannot refund this item since you haven't bought it.\n")
+
+    elif refundPrompt == "orange" and orangeBought == True:
+        orangeBought = True
+        print(f"Refunded orange! The total is: {current - 1.25}.")
+    elif refundPrompt == "orange" and orangeBought == False:
+        orangeBought = False
+        print("We cannot refund this item since you haven't bought it. \n")
+        
+    elif refundPrompt == "pear" and pearBought == True:
+        pearBought = True
+        print(f"Refunded pear! The total is: {current - 1.85}.")
+    elif refundPrompt == "pear" and pearBought == False:
+        pearBought = False
+        print("We cannot refund this item since you haven't bought it. \n")
 
 
 def buy():
