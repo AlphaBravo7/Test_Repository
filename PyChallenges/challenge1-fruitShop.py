@@ -129,6 +129,7 @@ while True:
             print("Function does not work as intended. \n")
             pass
         else:
-            print("No item to refund. \n")
+            print("Function does not work as intended. \n")
+            pass
     else:
         print(f"\n Invalid input. The total is at £{current}. \n")
