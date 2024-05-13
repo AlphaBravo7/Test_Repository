@@ -44,7 +44,7 @@ def buy():
             print(f"Bought a pear successfully! Your current total is at £{totalCost}.")
 
 
-print("-- WELCOME! Apples cost £1 each, Bananas are £1.15 each, Oranges cost £1.25 each and Pears are £1.85 each. --")
+print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
 input_field = input("What'd you like to buy? ['FINISH' will end the session.] ").lower()
 if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
     buy() 
