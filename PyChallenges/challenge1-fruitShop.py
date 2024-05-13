@@ -82,6 +82,7 @@ def buy():
             current = totalCost + 1.85
             print(f"Bought a pear successfully! Your current total is at £{current}.\n")
 
+
 while True:
     print("-- WELCOME! An apple costs £1, A banana is £1.15, An oranges costs £1.25 and a pear is £1.85. --")
     input_field = input("What'd you like to buy? ['FINISH' will end the session | 'REFUND' to get a refund.] ").lower()
