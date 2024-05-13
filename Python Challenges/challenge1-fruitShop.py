@@ -51,7 +51,7 @@ while True:
     if input_field == "apple" or input_field == "banana" or input_field == "orange" or input_field == "pear":
         buy() 
     elif input_field == "nothing" or input_field == "":
-        print(f"\n You bought nothing, your current total is: £{current}.")
+        print(f"You bought nothing, your current total is: £{current}. \n")
     elif input_field == "finish":
         print(f"\n Thank you for shopping with us! The final total adds up to: £{current}.")
         quit(0)
