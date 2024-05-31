@@ -31,6 +31,9 @@ def dealWithQuit():
   deleteFile()
   quit(0)
 
+def invalidInputDealer():
+  print("The input you have written is invalid. Program will quit.")
+  quit(0)
 
 print("--File Handling Test--\n")
 
@@ -76,4 +79,8 @@ if prompt4 == "n":
 print("\n")
 
 print("--END OF TEST--")
+print("File has been deleted due to it being a test file.")
+
+closeFile()
+deleteFile()
 quit(0)
