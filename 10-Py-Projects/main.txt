@@ -1,0 +1,13 @@
+Link: https://www.codecademy.com/resources/blog/python-code-challenges-for-beginners/
+
+Projects:
+1. Convert radians into degrees (Status: INCOMPLETE)
+2. Sort a list (Status: INCOMPLETE)
+3. Convert a decimal number into binary (Status: INCOMPLETE)
+4. Count the vowels in a string (Status: INCOMPLETE)
+5. Hide a credit card number (Status: INCOMPLETE)
+6. Are the X's equal to the O's? (Status: INCOMPLETE)
+7. Make a calculator function (Status: INCOMPLETE)
+8. Give me the discount (Status: INCOMPLETE)
+9. Just the numbers (Status: INCOMPLETE)
+10. Repeat the characters (Status: INCOMPLETE)
