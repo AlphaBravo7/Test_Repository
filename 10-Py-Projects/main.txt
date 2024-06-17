@@ -1,7 +1,7 @@
 Link: https://www.codecademy.com/resources/blog/python-code-challenges-for-beginners/
 
 Projects:
-1. Convert radians into degrees (Status: INCOMPLETE)
+1. Convert radians into degrees (Status: COMPLETED!!)
 2. Sort a list (Status: INCOMPLETE)
 3. Convert a decimal number into binary (Status: INCOMPLETE)
 4. Count the vowels in a string (Status: INCOMPLETE)
