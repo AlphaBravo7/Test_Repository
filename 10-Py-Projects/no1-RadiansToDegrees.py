@@ -1,4 +1,4 @@
-# 1 degree = 57.2957795 radians
+# Note: 1 degree = 57.2957795 radians
 
 # Degrees to Radians
 
