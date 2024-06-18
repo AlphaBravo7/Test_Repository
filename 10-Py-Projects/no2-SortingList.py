@@ -13,7 +13,7 @@ def Sort():
         List = [6, 1, 2, 9, 3, 4, 8, 5, 7, 10]
         print(List)
     else:
-        print("Invalid input, program will shut down.")
+        print("Invalid input, program will shut down.\n")
         quit()
 
 Sort()
