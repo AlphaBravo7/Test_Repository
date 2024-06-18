@@ -1,4 +1,4 @@
-def Sort():
+def SortingListFunction():
     List = [6, 1, 2, 9, 3, 4, 8, 5, 7, 10]
     print(f"{List} is a list of numbers.\n")
     params = ["asc", "desc", "none"]
@@ -16,4 +16,4 @@ def Sort():
         print("Invalid input, program will shut down.\n")
         quit()
 
-Sort()
+SortingListFunction()
